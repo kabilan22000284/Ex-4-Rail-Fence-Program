@@ -1,26 +1,33 @@
-# Ex--5-Rail-Fence-Program
+# Ex-5  Rail-Fence-Program
 
-# IMPLEMENTATION OF RAIL FENCE – ROW & COLUMN TRANSFORMATION TECHNIQUE
+## IMPLEMENTATION OF RAIL FENCE – ROW & COLUMN TRANSFORMATION TECHNIQUE
+## NAME:LOSHINI G
+## REGISTER NO:212223220051
+## DEPARTMENT:IT
 
-# AIM:
+## AIM:
 
 # To write a C program to implement the rail fence transposition technique.
 
-# DESCRIPTION:
+## DESCRIPTION:
 
 In the rail fence cipher, the plain text is written downwards and diagonally on successive "rails" of an imaginary fence, then moving up when we reach the bottom rail. When we reach the top rail, the message is written downwards again until the whole plaintext is written out. The message is then read off in rows.
 
-# ALGORITHM:
+## ALGORITHM:
 
-STEP-1: Read the Plain text.
-STEP-2: Arrange the plain text in row columnar matrix format.
-STEP-3: Now read the keyword depending on the number of columns of the plain text.
-STEP-4: Arrange the characters of the keyword in sorted order and the corresponding columns of the plain text.
-STEP-5: Read the characters row wise or column wise in the former order to get the cipher text.
+#### STEP-1: 
+Read the Plain text.
+#### STEP-2:
+Arrange the plain text in row columnar matrix format.
+#### STEP-3:
+Now read the keyword depending on the number of columns of the plain text.
+#### STEP-4:
+Arrange the characters of the keyword in sorted order and the corresponding columns of the plain text.
+#### STEP-5:
+Read the characters row wise or column wise in the former order to get the cipher text.
 
-# PROGRAM
+## PROGRAM:
 ```
-PROGRAM:
 #include <stdio.h>
 #include <string.h>
 int main() {
@@ -59,9 +66,9 @@ int main() {
 }
 ```
 
-# OUTPUT
-![Screenshot 2025-03-27 090457](https://github.com/user-attachments/assets/a5b4bb0b-14ce-4c4d-9e9e-f141113d29ca)
+## OUTPUT:
+![CRYPTO EX 5](https://github.com/user-attachments/assets/b8930e28-2974-4b92-8988-7c11085ba134)
 
 
-# RESULT
-The program is executed successfully.
+## RESULT:
+The input plaintext "HELLOWORLD" was encrypted using the Rail Fence Cipher with 3 rails. The characters were arranged in a zigzag pattern across three rows, and then read row-wise to produce the cipher text "HOLELWRDLO". This demonstrates the transposition effect of the Rail Fence Cipher, where the original message is rearranged to create the encrypted output.
